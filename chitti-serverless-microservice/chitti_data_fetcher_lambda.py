@@ -23,11 +23,15 @@ def get_recordset(device_id):
 def lambda_handler(event, context):
     # TODO implement
     operation = event['httpMethod']
-    if operation == "Get"
+    print(event)
+    if operation == "Get":
         if event['queryStringParameters']['device_id']:
             result = get_recordset(event['queryStringParameters']['device_id'])
             if result:
-                return {"items": result[0], "count",result[1]}
+                return {"items": result[0], "count": result[1]}
             else:
-                returm {"error": "Something went wrong while fetching data"}
+                return {"error": "Something went wrong while fetching data"}
         else:
+            return {}
+    else:
+        return {"error": "Invalid Request"}
