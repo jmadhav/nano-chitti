@@ -32,6 +32,17 @@ export class SimplechartComponent implements OnInit {
 		      type: 'spline',
 		      zoomType: 'x'
 		    },
+	        yAxis: {
+		        title: {
+		            text: 'Temperature (°C)'
+		        }
+		    },
+		    xAxis: {
+			        type: 'datetime' //ensures that xAxis is treated as datetime values
+			    },
+			 //     xAxis: {
+    //     categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    // },
 		    title: {
 		      text: 'Linechart'
 		    },
