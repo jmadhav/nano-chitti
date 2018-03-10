@@ -159,22 +159,22 @@ ENV/
 /out-tsc
 
 # dependencies
-/node_modules
-jspm_packages
-bower_components
+*/node_modules
+*jspm_packages
+*bower_components
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
+*/.sass-cache
+*/connect.lock
+*/coverage
+*/libpeerconnection.log
+*npm-debug.log
+*testem.log
+*/typings
 
 # e2e
-/e2e/*.js
-/e2e/*.map
+*/e2e/*.js
+*/e2e/*.map
 
 
 # Cache files for Sublime Text
