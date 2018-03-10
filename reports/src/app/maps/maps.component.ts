@@ -43,6 +43,7 @@ export class MapsComponent implements OnInit {
       const map = new google.maps.Map(document.getElementById('map'), mapOptions);
       const Marker = new google.maps.Marker({
           position: myLatlng,
+          icon: '../assets/img/chitti.png',
           title: 'Hello World!'
       });
   // To add the marker to the map, call setMap();
